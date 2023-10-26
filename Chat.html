@@ -1,0 +1,110 @@
+<html>
+
+<head>
+	<title>Inbox</title>
+	<link rel="icon" type="image/x-icon" href="Components/Logo/favicon.ico">
+			<link rel="stylesheet" href="Parent.css">
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script defer src="https://widget-js.cometchat.io/v3/cometchatwidget.js"></script>
+	<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+                <script type="text/javascript">
+                  function googleTranslateElementInit() {
+                    new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+                  }
+              
+                  function changeLanguage(langCode) {
+                    var select = document.querySelector('.goog-te-combo');
+                    select.value = langCode;
+                    select.dispatchEvent(new Event('change'));
+                  }
+                </script>
+</head>
+
+<body>
+
+	<div class="navbar">
+		<a href="#home"><img src = "../Components/Logo/Logo3.png" /></a>
+		
+		<div class="dropdown" style="float:right;">
+		  <button class="dropbtn">Anuraj
+			<i class="fa fa-caret-down"></i>
+		  </button>
+		  <div class="dropdown-content">
+			<a href="MyProfile.html"><i class="fa fa-fw fa-user"></i>Profile</a>
+			<a href="ResetPassword.html"><i class="fa fa-fw fa-unlock-alt"></i>Change Password</a>
+			<a href="#"><i class="fa fa-fw fa-sign-out"></i>Log out</a>
+		  </div>
+		</div> 
+	  </div>
+	<!--<ul>
+		<li><img src = "Components/Logo/Logo3.png" /></li>
+	  <li><a id="id1" href="#dashboard" class="btn">Dashboard</a></li>
+	  <li><a href="MyProfile.html" class="btn">My Profile</a></li>
+	  <li><a href="Parent_Notification.html" class="btn">Notifications</a></li>
+	  <li><a href="Chat.html" class="btn">My Inbox</a></li>
+	  <li><a href="createMeeting.html" class="btn">Meeting</a></li>
+	  <li><a href="Payment.php" class="btn">Payments</a></li>
+	  <li><a href="#signout" class="btn">Sign Out</a></li>
+	
+	</ul>-->
+	<div class="sidebar">
+		<a href="home.html"><i class="fa fa-fw fa-home"></i> Home</a>
+		<a href="Parent_dashboard.html"><i class="fa fa-fw fa-tachometer"></i> Dashboard</a>
+		<a href="Chat.html" class="active"><i class="fa fa-fw fa-comment"></i> Inbox</a>
+		<a href="createMeeting.html"><i class="fa fa-fw fa-video-camera"></i> Meeting</a>
+		<a href="Payment.html"><i class="fa fa-fw fa-credit-card-alt"></i> Payment</a>
+		<!--<a href="#services"><i class="fa fa-fw fa-wrench"></i> Services</a>
+		
+		<a href="#contact"><i class="fa fa-fw fa-envelope"></i> Contact</a>-->
+		
+	  </div>
+	<div style="margin-left:25%;padding:10px 16px;">
+		<h2>My Inbox</h2>
+		<div id="google_translate_element"></div>
+
+  <!-- Language buttons -->
+ 
+  <button onclick="changeLanguage('ta')">Translate to tamil</button>
+  <button onclick="changeLanguage('si')">Translate to sinhala</button>
+
+  <div class="content">
+	<br>
+	<div id="cometchat"></div>
+	<script>
+	window.addEventListener('DOMContentLoaded', (event) => {
+		CometChatWidget.init({
+			"appID": "2446382463d97217",
+			"appRegion": "us",
+			"authKey": "92db77889fabeac2e6bce0c885af481bcc1ec8b0"
+		}).then(response => {
+			console.log("Initialization completed successfully");
+			//You can now call login function.
+			CometChatWidget.login({
+				"uid": "anu2601"
+			}).then(response => {
+				CometChatWidget.launch({
+					"widgetID": "ba6deb25-85a1-4834-8031-19a93649f004",
+					"target": "#cometchat",
+					"roundedCorners": "true",
+					"height": "450px",
+					"width": "800px",
+					"defaultID": 'superhero1', //default UID (user) or GUID (group) to show,
+					"defaultType": 'user' //user or group
+				});
+			}, error => {
+				console.log("User login failed with error:", error);
+				//Check the reason for error and take appropriate action.
+			});
+		}, error => {
+			console.log("Initialization failed with error:", error);
+			//Check the reason for error and take appropriate action.
+		});
+	});
+	</script>
+	
+	</div>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,465 @@
+body {
+  margin: 0;
+  background-color: #F5F5F5;
+}
+
+.navbar img {
+	width: 25px;
+	height: 10px;
+	margin: 0;
+}
+
+.sidebar {
+  margin-top: 100px;
+  margin-left: 50px;
+  height: 48.9%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  
+  overflow-x: hidden;
+  padding: 0px;
+}
+
+/* Style sidebar links */
+.sidebar a {
+  padding: 12px 8px 12px 20px;
+  text-decoration: none;
+  font-size: 20px;
+  background-color: #f9f9f9;
+  color: #191970;
+  display: block;
+}
+
+/* Style links on mouse-over */
+.sidebar a:hover {
+  background-color: #FFA500;
+}
+
+.sidebar .active {
+  background-color: #FFA500;
+  
+}
+
+/* Style the main content */
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  padding: 0px 10px;
+}
+
+/* Add media queries for small screens (when the height of the screen is less than 450px, add a smaller padding and font-size) */
+@media screen and (max-height: 15px) {
+  .sidebar {padding-top: 135px;}
+  .sidebar a {font-size: 18px;}
+}
+
+.navbar {
+  position: fixed; 
+  top: 0;
+ 
+  width: 100%;
+  background-color: #191970;
+  overflow: hidden;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: right;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #FFA500;
+}
+
+.dropdown-content {
+  display: none;
+  position: fixed;
+  background-color: #f9f9f9;
+  right: 0;
+  min-width: 80px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #FFA500;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+table {
+  border-collapse: collapse;
+  width: 50%;
+  margin: 20px auto;
+  background-color: #191970;
+  color: white;
+}
+th, td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+}
+th {
+  background-color: #FFA500;
+}
+td {
+  background-color: #191970;
+}
+td:hover {
+  background-color: #FFA500;
+  color: #191970;
+}
+
+.content {
+  max-width: 800px;
+  margin: 0px 10px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #666;
+}
+.announcement {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #FFA500;
+  border-radius: 5px;
+}
+.announcement h2 {
+  color: #191970;
+}
+
+.overview {
+  margin: 20px;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+.instructor, .description {
+  margin-bottom: 20px;
+}
+
+.schedule, .resources {
+  margin: 20px;
+}
+
+/* Style links, paragraphs, and other elements as needed */
+a {
+  text-decoration: none;
+}
+
+
+h2 {
+  margin-top: 60px;
+}
+
+
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 20%;
+ 
+  padding: 0 30px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card1 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color:white;
+  transition: 0.3s;
+}
+
+.card1:hover {
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  background-color: #FFA500;
+  
+}
+
+.container a:hover {
+  color: white;
+}
+
+.container {
+  padding: 0px 16px;
+
+}
+
+.container::after, .row::after {
+  content: " ";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #191970;
+  text-align: center;
+  cursor: pointer;
+  
+}
+
+.button:hover {
+  background-color: #4169e1;
+}
+
+.avatar {
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+
+  
+    
+	   
+		.container1 img {
+			border-radius: 150px;
+		}
+		
+		
+	
+	.cont1 {
+		padding: 10px;
+		margin-top:5px;
+		letter-spacing: 3px;
+	}
+	
+
+	
+	.column1 {
+  float: left;
+  width: 50%;
+ 
+  padding: 0 30px;
+}
+
+@media screen and (max-width: 650px) {
+  .column1 {
+    width: 100%;
+    display: block;
+  }
+}
+
+.container1 {
+  padding: 0 16px;
+}
+
+.container1::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+
+	
+	input[type=submit]
+	{
+		margin: 0px 20px 40px 40px;
+		box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
+		background-color: #191970;
+		color: white;
+		text-align: center;		
+		line-height: 10px;
+		cursor: pointer;
+	}
+
+	
+        /* Card styles */
+        .card-container {
+            width: 200px;
+            height: 300px;
+            perspective: 1000px;
+            display: inline-block;
+            margin: 10px;
+        }
+
+        .card {
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            transition: transform 0.5s;
+            cursor: pointer;
+			background-color: #191970;
+			color: white;
+        }
+
+        .card.flipped {
+            transform: rotateY(180deg);
+        }
+
+        .card-face {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            backface-visibility: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            border: 1px solid #ccc;
+            background-color: #191970;
+			color: white;
+        }
+
+        .card-back {
+            transform: rotateY(180deg);
+        }
+
+        #form-label {
+          font-weight: 900;
+        }
+        #input-field {
+          width: 100%;
+          max-width: 400px;
+          height: 25px;
+          margin-bottom: 25px;
+        }
+        #form-btn {
+          background: #191970;
+          color: #fff;
+          display: inline-block;
+          width: 80px;
+          height: 25px;
+          padding: 7px 10px 7px 10px;
+          border-radius: 5px 5px 5px 5px;
+          text-decoration: none;
+          text-align: center;
+          cursor: pointer;
+        }
+
+        /* Style the sections */
+
+
+/* Style the table headers */
+table.vertical .th {
+  background-color: #191970;
+  color: #fff;
+  padding: 20px;
+  text-align: left;
+}
+
+table .th {
+  width: 250px;
+}
+
+table.vertical th tr{
+  background-color: #ccc;
+}
+
+/* Style the table rows */
+table.vertical tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Style the percentage bars */
+.progress-bar {
+  background-color: #FFA500;
+  border-radius: 5px;
+  height: 20px;
+  line-height: 20px;
+  color: white;
+  text-align: center;
+  width: 100%; /* Adjust the width for different percentages */
+}
+
+.highlighted-date {
+  border: 2px solid #FFA500; /* Red border */
+  border-radius: 0%;
+  background-color: #FFA500; /* Makes it circular */
+  }
+
+
+  .classmate-list {
+    width: 100%;
+    max-width: auto;
+    margin: 0 ;
+    display: flex;
+    flex-wrap: wrap; /* Allow classmates to wrap to the next row */
+    /* Distribute the classmates evenly */
+}
+
+/* Style for each classmate */
+.classmate {
+    display: flex;
+    flex-direction: column; /* Stack name under profile picture */
+    
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    width: 15%; /* Adjust the width to fit the desired number of participants per row */
+    box-sizing: border-box; /* Ensure the padding doesn't exceed the specified width */
+}
+
+/* Style for the classmate profile picture */
+.classmate img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 10px; /* Space between the picture and the name */
+}
+
+/* Style for the classmate name */
+.classmate .name {
+    font-weight: bold;
+}
+
+/* Style for the classmate profile */
+.classmate .profile {
+    font-size: 14px;
+}
+
